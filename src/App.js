@@ -22,7 +22,7 @@ class App extends Component{
     search = (keyword)=>{
         // console.log(keyword)
         var dataArray = []
-        var url = 'https://api.themoviedb.org/3/search/movie?api_key=978f3037562621f5e9d701c2f84e8c09&query='+keyword;
+        var url = 'https://api.themoviedb.org/3/search/movie?api_key=??&query='+keyword;
         Axios.get(url).then(result=>{
           
             console.log(JSON.stringify(result.data.results))  
